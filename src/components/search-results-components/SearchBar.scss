@@ -1,0 +1,29 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em 0;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+}
+
+input[type="text"] {
+  color: #383838;
+  background-color: #e6e6e6;
+  outline: hidden;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+input[type="text"]::placeholder {
+  color: #afafaf;
+}

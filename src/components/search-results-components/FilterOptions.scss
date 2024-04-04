@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #5040ff;
+}
+
+body {
+  color: black;
+}
+
+.transfer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.transfer-options {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .transfer-options {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+}
+
+.transfer-container hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(80, 64, 255, 0.2);
+  margin-bottom: 10px;
+}

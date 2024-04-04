@@ -1,0 +1,24 @@
+.custom-button {
+  color: aliceblue;
+  border-radius: 0.2em;
+  border: none;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none !important;
+}
+
+.custom-button:hover {
+  background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-button {
+    font-size: 12px;
+    padding: 10px 12px;
+    font-weight: 600;
+  }
+}

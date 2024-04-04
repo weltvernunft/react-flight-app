@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,900;1,900&display=swap");
+
+:root {
+  --primary-color: #5040ff;
+  --font-family: "Inter", sans-serif;
+
+
+.detailed-card-container {
+  max-width: 50vw;
+  color: var(--primary-color);
+  padding: 1em;
+  border-radius: 0.2em;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .detailed-card-container {
+    max-width: 100%;
+    color: var(--primary-color);
+    padding: 1em;
+    border-radius: 0.2em;
+    background-color: white; /* Set background color to white */
+  }
+}
+
+.airline-number {
+  grid-row: 1; /* Place the airline number in the first row */
+}
+
+/* Styles for attribute title */
+.attr-title {
+  color: black;
+  font-weight: 500;
+}
+
+/* Styles for go back button */
+.go-back-btn {
+  border: none;
+  font-size: 14px;
+  // background-color: var(--primary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5em;
+  padding: 13px 15px;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Define grid styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 10px;
+}
+
+/* Define styles for each grid item */
+.grid-item {
+  grid-column: span 1;
+}
+
+.dep-denotion {
+  width: 70%;
+  margin: 2em 0;
+}

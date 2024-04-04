@@ -1,0 +1,9 @@
+/* SortOptions.scss */
+:root {
+  --primary-color: #5040ff;
+}
+.sort-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

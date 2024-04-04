@@ -1,0 +1,67 @@
+[
+  {
+    "cost": 500,
+    "airline": "Avi Airways",
+    "flightNumber": "AV123",
+    "departure": "New York (JFK)",
+    "destination": "Los Angeles (LAX)",
+    "departureTime": "2024-04-05T10:00:00Z",
+    "arrivalTime": "2024-04-05T14:30:00Z",
+    "duration": "4h 30m",
+    "transfers": 0,
+    "flightClass": "Economy",
+    "baggageIncluded": true
+  },
+  {
+    "cost": 550,
+    "airline": "SkyJet Airlines",
+    "flightNumber": "SKY456",
+    "departure": "Los Angeles (LAX)",
+    "destination": "New York (JFK)",
+    "departureTime": "2024-04-06T08:00:00Z",
+    "arrivalTime": "2024-04-06T14:30:00Z",
+    "duration": "6h 30m",
+    "transfers": 1,
+    "flightClass": "Business",
+    "baggageIncluded": false
+  },
+  {
+    "cost": 620,
+    "airline": "AirFlyer",
+    "flightNumber": "AF789",
+    "departure": "London (LHR)",
+    "destination": "Paris (CDG)",
+    "departureTime": "2024-04-07T12:00:00Z",
+    "arrivalTime": "2024-04-07T14:30:00Z",
+    "duration": "2h 30m",
+    "transfers": 0,
+    "flightClass": "First Class",
+    "baggageIncluded": true
+  },
+  {
+    "cost": 400,
+    "airline": "Global Airlines",
+    "flightNumber": "GLB101",
+    "departure": "Tokyo (HND)",
+    "destination": "Beijing (PEK)",
+    "departureTime": "2024-04-08T09:00:00Z",
+    "arrivalTime": "2024-04-08T11:30:00Z",
+    "duration": "2h 30m",
+    "transfers": 0,
+    "flightClass": "Economy",
+    "baggageIncluded": false
+  },
+  {
+    "cost": 750,
+    "airline": "Swift Airways",
+    "flightNumber": "SWF222",
+    "departure": "Sydney (SYD)",
+    "destination": "Singapore (SIN)",
+    "departureTime": "2024-04-09T15:00:00Z",
+    "arrivalTime": "2024-04-09T19:30:00Z",
+    "duration": "4h 30m",
+    "transfers": 1,
+    "flightClass": "Business",
+    "baggageIncluded": true
+  }
+]
