@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import jsonData from "../assets/flights.json";
-import "./SearchResults.scss";
 import FlightCard from "./search-results-components/FlightCard.jsx";
 import FilterOptions from "./search-results-components/FilterOptions";
 import SortOptions from "./search-results-components/SortOptions";
 import SearchBar from "./search-results-components/SearchBar";
+import "./SearchResults.scss";
 
 function SearchResults() {
   const [maxTransfers, setMaxTransfers] = useState(0);
@@ -15,8 +14,27 @@ function SearchResults() {
   });
   const [filteredTickets, setFilteredTickets] = useState([]);
 
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        "https://660c47723a0766e85dbdd355.mockapi.io/api/v1/flights"
+      );
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await response.json();
+      setFilteredTickets(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
   const handleFilterByTransfers = () => {
-    const filtered = jsonData.filter(
+    const filtered = filteredTickets.filter(
       (ticket) => ticket.transfers <= maxTransfers
     );
     setFilteredTickets(filtered);
@@ -61,7 +79,7 @@ function SearchResults() {
   };
 
   const handleSearch = (query) => {
-    const filtered = jsonData.filter((ticket) =>
+    const filtered = filteredTickets.filter((ticket) =>
       ticket.airline.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredTickets(filtered);

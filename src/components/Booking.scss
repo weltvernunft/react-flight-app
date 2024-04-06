@@ -21,6 +21,7 @@
 
 .booking-form input[type="text"],
 .booking-form input[type="email"] {
+  background-color: #ddd;
   margin: 0 0.4em;
   padding: 8px;
   border: 1px solid #ddd;
@@ -41,8 +42,43 @@
   background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .booking-form {
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .booking-form input[type="text"],
+  .booking-form input[type="email"] {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    background-color: #ddd;
+    // margin: 0 0.4em;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1366px) {
+  .booking-form {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .booking-form input[type="text"],
+  .booking-form input[type="email"] {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    background-color: #ddd;
+    // margin: 0 0.4em;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
   }
 }
